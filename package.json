@@ -1,6 +1,6 @@
 {
   "name": "vibehistory",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Command History MCP for AI Assistants",
   "main": "dist/index.js",
   "scripts": {

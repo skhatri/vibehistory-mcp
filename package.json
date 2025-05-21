@@ -1,6 +1,6 @@
 {
   "name": "vibehistory",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Command History MCP for AI Assistants",
   "main": "dist/index.js",
   "scripts": {
@@ -18,10 +18,11 @@
     "history",
     "logging"
   ],
-  "author": "",
+  "author": "Suresh Khatri",
   "license": "MIT",
   "dependencies": {
-    "fs-extra": "^10.1.0"
+    "fs-extra": "^10.1.0",
+    "vibehistory": "^0.1.0"
   },
   "prepublishOnly": "npm run build",
   "devDependencies": {
@@ -35,5 +36,17 @@
     "ts-jest": "^29.1.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4"
-  }
-} 
+  },
+  "types": "./dist/index.d.ts",
+  "directories": {
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skhatri/vibehistory-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/skhatri/vibehistory-mcp/issues"
+  },
+  "homepage": "https://github.com/skhatri/vibehistory-mcp#readme"
+}

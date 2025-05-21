@@ -10,12 +10,58 @@ A Model Completion Provider (MCP) that logs and optionally modifies all commands
 - **Home Directory Storage**: Can store history in `~/.vibehistory/<project-name>/` for commands and `~/.vibehistory/<project-name>.vibeR/` for responses
 - **Rule-Based System**: Configurable rules for how commands should be modified
 - **First in Chain**: Can be configured to be the first MCP in the processing chain
+- **Multi-Tool Integration**: Easy integration with Cursor, Roo, and Cline
 
 ## Installation
 
 ```bash
 npm install vibehistory
 ```
+
+## Tool Integration
+
+### Universal Installation
+
+To automatically detect and install for all supported tools (Cursor, Roo, Cline):
+
+```bash
+./install-all.sh
+```
+
+This script will:
+1. Install the package globally
+2. Detect which tools are installed on your system
+3. Install and configure vibehistory for each detected tool
+
+### Cursor Integration
+
+To use this MCP with Cursor in all your sessions:
+
+```bash
+./install-global.sh
+```
+
+See [CURSOR_SETUP.md](CURSOR_SETUP.md) for detailed instructions.
+
+### Roo Integration
+
+To use this MCP with Roo in all your sessions:
+
+```bash
+./install-roo.sh
+```
+
+See [ROO_SETUP.md](ROO_SETUP.md) for detailed instructions.
+
+### Cline Integration
+
+To use this MCP with Cline in all your sessions:
+
+```bash
+./install-cline.sh
+```
+
+See [CLINE_SETUP.md](CLINE_SETUP.md) for detailed instructions.
 
 ## Usage
 
@@ -36,7 +82,6 @@ import { createCommandHistoryMCP, CommandHistoryConfig } from 'vibehistory';
 const config: Partial<CommandHistoryConfig> = {
   saveResponses: true,
   storage: {
-    type: 'file',
     useHomeDir: true,  // Use ~/.vibehistory/<project-name>
     path: './custom_history_path', // Used if useHomeDir is false
     retentionDays: 60

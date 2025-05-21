@@ -1,0 +1,24 @@
+{
+  "id": "1747829368467-ixt330l",
+  "timestamp": "2025-05-21T12:09:28.467Z",
+  "sessionId": "custom-session",
+  "originalCommand": {
+    "prompt": "This is important information",
+    "metadata": {
+      "source": "wrapper-example"
+    }
+  },
+  "modifiedCommand": {
+    "prompt": "This is ***IMPORTANT*** information",
+    "metadata": {
+      "source": "wrapper-example"
+    }
+  },
+  "modifications": [
+    {
+      "type": "edit",
+      "pattern": "important",
+      "replacement": "***IMPORTANT***"
+    }
+  ]
+}
